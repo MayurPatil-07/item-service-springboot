@@ -29,6 +29,12 @@ public class ItemController {
         items.add(item);
         return "Item added successfully!";
     }
+    // Get all items
+@GetMapping
+public List<Item> getAllItems() {
+    return items;
+}
+
 
     // Get item by ID
     @GetMapping("/{id}")
@@ -42,3 +48,4 @@ public class ItemController {
         return null;
     }
 }
+
