@@ -35,6 +35,10 @@ public List<Item> getAllItems() {
     return items;
 }
 
+@GetMapping("/")
+public String home() {
+    return "Item Service API is running!";
+}
 
     // Get item by ID
     @GetMapping("/{id}")
@@ -48,4 +52,5 @@ public List<Item> getAllItems() {
         return null;
     }
 }
+
 
